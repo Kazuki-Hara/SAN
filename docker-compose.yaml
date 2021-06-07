@@ -1,0 +1,10 @@
+version: '2.4'
+services:
+  nvsmi:
+    build: .
+    image: hara_pytorch
+    runtime: nvidia
+    container_name: hara_pytorch
+    volumes:
+        - /mnt/ssd/hara/SAN:/workspace
+    tty: True
